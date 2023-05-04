@@ -5,7 +5,7 @@
 // 	h.innerText("hii");
 // }setTimeout(resolve(),1000);
 
-
+const h = document.getElementbyId("output");
 const promise = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(["Hello world!"]);
@@ -13,5 +13,5 @@ const promise = new Promise((resolve, reject) => {
     });
       
     promise.then(values => {
-    console.log(values);
+    h.innertext(values);
     });
